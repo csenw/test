@@ -1,0 +1,44 @@
+SVM.cpp
+
+constants:
+1. INF: HUGE_VAL (very big number)
+2. TAU: 1e-12 (very close to zero)
+
+functions:
+1. min
+2. max
+3. swap: swap values of two variables
+4. clone: return a cloned object
+5. powi: calculate power
+6. print_string_stdout
+7. info
+
+classes:
+1. Kernel Cache
+2. QMatrix
+3. Kernel (inherit from QMatrix)
+4. Solver (An SMO algorithm in Fan et al. JMLR 6(2005), pp. 1889-1918)
+// Solves:
+//
+//	min 0.5(\alpha^T Q \alpha) + p^T \alpha
+//
+//		y^T \alpha = \delta
+//		y_i = +1 or -1
+//		0 <= alpha_i <= Cp for y_i = 1
+//		0 <= alpha_i <= Cn for y_i = -1
+//
+// Given:
+//
+//	Q, p, y, Cp, Cn, and an initial feasible point \alpha
+//	l is the size of vectors and matrices
+//	eps is the stopping tolerance
+//
+// solution will be put in \alpha, objective value will be put in obj
+//
+5. Solver_NU inherit from Solver
+//
+// Solver for nu-svm classification and regression
+//
+// additional constraint: e^T \alpha = constant
+//
+6. SVC_Q: Q matrices for various formulations
