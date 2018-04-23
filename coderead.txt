@@ -42,3 +42,4 @@ classes:
 // additional constraint: e^T \alpha = constant
 //
 6. SVC_Q: Q matrices for various formulations
+test
