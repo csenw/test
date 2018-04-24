@@ -42,3 +42,34 @@ classes:
 // additional constraint: e^T \alpha = constant
 //
 6. SVC_Q: Q matrices for various formulations
+7. ONE_CLASS_Q:
+8. SVR_Q:
+9. static void solve_c_svc: construct and solve various formulations
+10. static void solve_nu_svc:
+11. static void solve_one_class:
+12. static void solve_epsilon_svr:
+13. static void solve_nu_svr:
+14. struct decision_function: decision_function (double * alpha, double rho)
+15. static decision_function svm_train_one
+16. static void sigmoid_train: Platt's binary SVM Probabilistic Output: an improvement from Lin et al.
+17. static double sigmoid_predict
+18. static void multiclass_probability:
+19: static void svm_Binary_svc_probability:
+20: static double svm_svr_probability:
+21: static void svm_group_classes
+22: svm_model *svm_train: interface functions
+23: svm_cross_validation:
+24: int svm_get_svm_type:
+25: int svm_get_nr_class:
+26: void svm_get_labels:
+27: double svm_get_svr_probability:
+28: double svm_predict_values:
+29: double svm_predict:
+30: double svm_predict_probability:
+31: svm_save_model:
+32: svm_model* svm_load_model:
+33: void svm_free_model_content:
+34: void svm_free_and_destroy_model:
+35: void svm_destroy_param:
+36: int svm_check_probability_model:
+37: void svm_get_print_string_function:
