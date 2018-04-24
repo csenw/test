@@ -42,7 +42,6 @@ classes:
 // additional constraint: e^T \alpha = constant
 //
 6. SVC_Q: Q matrices for various formulations
-<<<<<<< HEAD
 7. ONE_CLASS_Q:
 8. SVR_Q:
 9. static void solve_c_svc: construct and solve various formulations
